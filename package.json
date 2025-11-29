@@ -1,0 +1,36 @@
+{
+  "name": "canteen-management-backend",
+  "version": "1.0.0",
+  "description": "Backend for Canteen Management System",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "cleanup-images": "node cleanupImages.js",
+    "cleanup-images:dry-run": "node cleanupImages.js --dry-run",
+    "cleanup-images:status": "node cleanupImages.js --status"
+  },
+  "keywords": [
+    "canteen",
+    "management",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongodb-session": "^3.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "mongoose": "^7.6.3",
+    "multer": "^2.0.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
